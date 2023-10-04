@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Авторизация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <ul>
+                <li><a href="lab2.html">Главная</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Мастер-классы</a></li>
+                <li><a href="#">Преподаватели</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+                <li><a href="#">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div class="cell_at">
+        <h1>Авторизация</h1>
+        <form action="обработчик.php" method="POST">
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required><br><br>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="checkbox" id="rememberme" name="rememberme" value="yes">
+        <label for="rememberme">Запомнить меня</label><br><br>
+
+        <button type="submit">Войти</button>
+        </form> 
+        </div> 
+    </main>
+</body>
+</html>
